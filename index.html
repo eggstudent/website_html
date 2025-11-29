@@ -3,138 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <title>Steven's Blog</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <!-- 頁頭區 -->
     <header>
         <h1>Steven 的個人部落格</h1>
         <nav>
             <a href="#section1">關於我</a>
             <a href="#section2">就學經歷</a>
             <a href="#section3">音樂作品</a>
-            <a href="#section4">視訊作品</a>
+            <a href="#section4">影片作品</a>
             <a href="#section5">圖片作品</a>
-            <a href="#section6">更多資訊</a>
+            <a href="#section6">更多資訊</a> 
         </nav>
     </header>
     
-    <!-- 主內容區 -->
-    <main>
-        <!-- 側邊欄補充資訊 -->
-        <aside style="width:30%; float:right;">
+    <main class="blog-layout"> 
+        <aside class="sidebar"> 
             <blockquote>
-                <h3>學習小貼士</h3>
-                <p>記得提前預習課程內容，並查詢相關資料以加深理解。</p>
+                <h3>座右銘</h3>
+                <p>日日精進</p>
+            </blockquote>
+        </aside>
+        
+        <aside class="sidebar"> 
+            <blockquote>
+                <h3>天氣</h3>
+                <p>好天氣預示著好的開始</p>
+                <img 
+                    src="HTML-Personal Site/weather.jpg" 
+                    alt="Sunny Weather" 
+                    width="100" 
+                    height="100">
+                <a href="https://www.google.com/search?q=%E5%A4%A9%E6%B0%A3&sca_esv=1939b7fac6b66ed5&sxsrf=AE3TifPVE7AHpNgycGB1AIlmncr5pAHlTg%3A1764342714160&source=hp&ei=urspabvwBuvq1e8P262BOA&iflsig=AOw8s4IAAAAAaSnJyhSRMwm6fKvLPHv_zD4X73sJXkz6&oq=&gs_lp=Egdnd3Mtd2l6IgAqAggAMg0QIxiABBgnGIoFGOoCMhMQIxjwBRiABBgnGMkCGIoFGOoCMg0QIxjwBRgnGMkCGOoCMg0QIxiABBgnGIoFGOoCMg0QLhiABBgnGIoFGOoCMg0QLhiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMg0QIxiABBgnGIoFGOoCMgcQIxgnGOoCMg0QIxiABBgnGIoFGOoCSPEMUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAgaoAgqYAwbxBQprXSfEbSwmkgcBMaAHALIHALgHAMIHAzItMcgHAw&sclient=gws-wiz&zx=1764342718697&no_sw_cr=1">天氣查詢</a>
             </blockquote>
         </aside>
 
-        <!-- 個人介紹 -->
-        <article id="section1">
-            <header>
-                <h2>關於我</h2>
-                <p>嗨，麥克風測試</p>
-            </header>
-            <section>
-                <table cellspacing="20">
-                    <tr>
-                        <td><img src="" alt="Steven picture"></td>
-                        <td><h1>Steven</h1><p>
-                            <em><strong><a href="https://www.ntue.edu.tw/">國立台北教育大學</a></strong>學生</em></p></td>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <p>嘻嘻</p>
-            </section>
-        </article>
+        <div class="main-content"> 
 
-        <!-- 就學經歷介紹 -->
-        <article id="section2">
-            <header>
-                <h2>就學經歷</h2>
-            </header>
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dates</th>
-                            <th>Work</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2024-2025</td>
-                            <td>國立台北教育大學資訊科學系</td>
-                        </tr>
-                        <tr>
-                            <td>2018-2023</td>
-                            <td>小屁孩</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </article>
+            <article id="section1">
+                <header>
+                    <h2>關於我</h2>
+                    <p>本名蔡守博，目前是國立台北教育大學資訊科學系二年級生</p>
+                </header>
+                <section class="bio-intro"> 
+                    <div class="profile-image">
+                        <table class="profile-table"> 
+                            <tr>
+                                <td>
+                                    </td> 
+                                <td>
+                                    <h3>Steven</h3>
+                                    <img 
+                                        src="HTML-Personal Site/IMG_0282.jpg" 
+                                        alt="Steven's Photo" 
+                                        width="500" 
+                                        height="250"> 
+                                    <p>
+                                        <em><strong><a href="https://www.ntue.edu.tw/">國立台北教育大學</a></strong>學生示意照</em>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <details class="tip-details">
+                        <summary>更多關於我</summary>
+                        <ul> 
+                            <li>綽號:包含但不限於蛋捲、捲心菜...</li>
+                            <li>巨蟹座</li>
+                            <li>血型B</li>
+                            <li>興趣:拉小提琴、閱讀、騎腳踏車、打遊戲(戰車世界)</li>
+                            <li>努力學習coding中</li>
+                        </ul> 
+                    </details>
+                </section>
+            </article>
 
-        <!-- 音樂作品介紹 -->
-        <article id="section3">
-            <h2>音訊介紹</h2>
-            <audio controls>
-                <!-- 改為你的作品 -->
-                <source src="assets/audio/Whispers in the Trees 1.mp3" type="audio/mpeg">
-            </audio>
-        </article>
+            <article id="section2">
+                <header>
+                    <h2>就學經歷</h2>
+                </header>
+                <section>
+                    <table>
+                        <caption>Steven 的就學經歷</caption> 
+                        <thead>
+                            <tr>
+                                <th scope="col">日期 (Dates)</th>
+                                <th scope="col">學校 (School)</th>
+                                <th scope="col">經歷 (Experience)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-2025</td>
+                                <td>國立台北教育大學資訊科學系</td>
+                                <td>系排隊員、常駐總務股長、前班代</td>
+                            </tr>
+                            <tr>
+                                <td>2021-2023</td>
+                                <td>國立師範大學附屬高中</td>
+                                <td>工研社小肺霧</td>
+                            </tr>
+                            <tr>
+                                <td>2018-2021</td>            
+                                <td>北市敦化國中</td>
+                                <td></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
 
-        <!-- 視訊作品介紹 -->
-        <article id="section4">
-            <h2>視訊介紹</h2>
-            <video controls width="300">
-                <!-- 改為你的作品 -->
-                <source src="assets/video/Whispers in the Trees 1.mp4" type="audio/mpeg">                
-            </video>
-            &nbsp;&nbsp;<!-- 添加間隔 -->
-            <video controls width="300">
-                <!-- 改為你的作品 -->
-                <source src="assets/video/Rise Up and Shine.mp4" type="video/mp4">
-            </video>
-        </article>
+            <article id="section3">
+                <h2>音樂作品</h2>
+                <img 
+                    src="HTML-Personal Site/AIVA.png" 
+                    alt="AIVA" 
+                    width="150" 
+                    height="150">
+                <a href="https://creators.aiva.ai/publicPlayer?c=68eca63a0e534708d486449e">AIVA生成的音樂作品</a>
+                <ul>
+                    <li>使用AI音樂生成平台AIVA創作的音樂作品</li>
+                    <li>AI有用到我偏好的小調及切分音</li>
+                </ul>
+            </article>
 
-        <!-- 圖片作品集介紹與描述 -->
-        <article id="section5">
-            <h2>旅行照片集</h2>
-            <figure style="display:inline-block;">
-                <!-- 改為你的作品 -->
-                <img src="assets/images/mountain.jpg" alt="山間風景" width="450">
-                <figcaption>壯麗的山景</figcaption>
-            </figure>
-            <figure style="display:inline-block;">
-                <!-- 改為你的作品 -->
-                <img src="assets/images/village.jpg" alt="小鎮景色" width="450">
-                <figcaption>寧靜的小鎮</figcaption>
-            </figure>
-        </article>
+            <article id="section4">
+                <h2>影片作品</h2>
+                <img 
+                    src="HTML-Personal Site/vollageball.jpg" 
+                    alt="排球少年縮圖" 
+                    width="150" 
+                    height="225">
+                <a href="https://youtu.be/KpqsmN9yDuE">排球少年MV復刻</a>
+                <ul>
+                    <li>首先要感謝夠扛的隊友</li>
+                    <li>有人當躺分仔只負責簡報，不知道是誰，超過分</li>
+                </ul>
+            </article>
+            
+            <article id="section5">
+                <h2>圖片作品</h2>
+                <img 
+                    src="HTML-Personal Site/car1.jpg" 
+                    alt="超跑英姿照1" 
+                    width="150">
+                <img 
+                    src="HTML-Personal Site/car2.jpg" 
+                    alt="超跑英姿照2" 
+                    width="150">
+                <img 
+                    src="HTML-Personal Site/car3.jpg" 
+                    alt="超跑英姿照3" 
+                    width="150">
+                <ul>
+                    <li>用gemini生成的夢幻超跑照</li>
+                </ul>
+            </article>
+            
+            <article id="section6">
+    <h2>更多資訊</h2>
+    <dl>
+        <dt>程式作品：Java 專案名稱//待更新</dt>
+        <dd>
+            <p>這是一個使用 Java 撰寫的 。主要功能包括 [簡述功能 1, 2, 3]。</p>
+            <a href="您作品的GitHub網址" target="_blank">👉 查看程式碼 (GitHub)</a> 
+        </dd>
+        
+        <dt>志工經歷</dt>
+        <dd>北市太平國小輔導教學志工，資歷1年</dd>
+    </dl>
+</article>
 
-        <!-- 嵌入PDF文件 -->
-        <article id="section7">
-            <h2>更多資訊</h2>
-            <!-- 改為你的作品 -->
-            <embed src="assets/pdf/llm models.pdf" width="500" height="600">
-        </article>
-
-        <!-- 互動元素 -->
-        <details>
-            <summary>點擊查看學習提示</summary>
-            <p>建議攜帶筆記本與筆，方便隨時記錄課堂中的關鍵知識點與靈感。</p>
-        </details>
-
-        <!-- 加入地圖 -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338266!2d121.54206247541927!3d25.02462437782254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1731827435609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            <details class="tip-details">
+                <summary>建議別點開</summary>
+                <p>唉呦你幹嘛~唉呦</p>
+                <img src="HTML-Personal Site/chicken1.jpg" alt="Annoying Image" width="300" height="200">
+                <img src="HTML-Personal Site/chicken2.jpg" alt="Annoying Image 2" width="300" height="200">
+                <img src="HTML-Personal Site/chicken3.jpg" alt="Annoying Image 3" width="300" height="200">
+            </details>
+            
+        </div>
     </main>
     
-    <!-- 頁尾區 -->
     <footer>
-        <p>聯絡我們：contact@personalblog.com</p>
+        <p>聯絡我們：tsaistephen0709@gmail.com</p>
         <time datetime="2025-11-24">最後更新日期：2025年11月24日</time>
+        <p>© 2025 Steven's Blog. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
